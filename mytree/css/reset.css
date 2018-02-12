@@ -1,0 +1,240 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0; }
+
+fieldset, img {
+    border: none;
+    width: 100%;
+    height: 100%; }
+
+img {
+    display: block; }
+
+ul, ol, li {
+    list-style: none; }
+
+a {
+    color: #666;
+    text-decoration: none; }
+
+html {
+    font-size: 62.5%;
+    /* 10梅16=62.5% */ }
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 94% !important;
+        /* 15.04梅16=94% */ } }
+@media only screen and (min-width: 561px) {
+    html {
+        font-size: 109% !important;
+        /* 17.44梅16=109% */ } }
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 125% !important;
+        /* 20梅16=125% */ } }
+@font-face {
+    font-family: 'iconfont';
+    src: url("../font/iconfont.eot");
+    /* IE9*/
+    src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+    /* iOS 4.1- */ }
+@keyframes up {
+    0% {
+        opacity: 1;
+        transform: translateY(0px); }
+    25% {
+        opacity: 0.75;
+        transform: translateY(-5px); }
+    50% {
+        opacity: 0.5;
+        transform: translateY(-10px); }
+    75% {
+        opacity: 0.25;
+        transform: translateY(-15px); }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px); } }
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale; }
+
+.up:before {
+    content: "\e65a"; }
+.good:before {
+    content: "\e610"; }
+.swiper-container{
+    width:100vw !important;
+    height:100vh !important;
+}
+.swiper-slide{
+     width:100% !important;
+     height:100% !important;
+
+ }
+.myid{
+    position: absolute;
+    bottom:0;
+    left:2%;
+    width:40%;
+    height:6%;
+    z-index: 3;
+    text-align: left;
+    font:100 1.8rem/3.4rem "DFKai-SB";
+    color: #8bd8ab;
+}
+.good{
+    position: absolute;
+    bottom:0;
+    right:3%;
+    width:40%;
+    height:6%;
+    z-index: 3;
+    text-align: right;
+    font:100 1.8rem/2.2rem "iconfont";
+    color: #8bd8ab;
+}
+.slide-content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+body .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+    background: #616161 !important; }
+body .swiper-container .up-item {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 1%;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font: 100 1.4rem/2rem "iconfont";
+    animation: up 1.5s linear 0s infinite; }
+@keyframes Round {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0); }
+    20% {
+        transform: translateX(-3px) translateY(-6px) scale(0.1); }
+    40% {
+        transform: translateX(-6px) translateY(-12px) scale(0.2); }
+    60% {
+        transform: translateX(-9px) translateY(-18px) scale(0.3); }
+    80% {
+        transform: translateX(-12px) translateY(-24px) scale(0.4); }
+    100% {
+        transform: translateX(-15px) translateY(-30px) scale(0.5); } }
+@keyframes Cound {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0); }
+    20% {
+        transform: translateX(-3px) translateY(2px) scale(0.08); }
+    40% {
+        transform: translateX(-6px) translateY(4px) scale(0.16); }
+    60% {
+        transform: translateX(-9px) translateY(6px) scale(0.24); }
+    80% {
+        transform: translateX(-12px) translateY(8px) scale(0.32); }
+    100% {
+        transform: translateX(-15px) translateY(10px) scale(0.4); } }
+@keyframes Dound {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0); }
+    20% {
+        transform: translateX(3px) translateY(-3px) scale(0.09); }
+    40% {
+        transform: translateX(6px) translateY(-6px) scale(0.18); }
+    60% {
+        transform: translateX(9px) translateY(-9px) scale(0.27); }
+    80% {
+        transform: translateX(12px) translateY(-12px) scale(0.36); }
+    100% {
+        transform: translateX(15px) translateY(-15px) scale(0.45); } }
+@keyframes Eound {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0); }
+    20% {
+        transform: translateX(3px) translateY(4px) scale(0.04); }
+    40% {
+        transform: translateX(6px) translateY(8px) scale(0.08); }
+    60% {
+        transform: translateX(9px) translateY(12px) scale(0.12); }
+    80% {
+        transform: translateX(12px) translateY(16px) scale(0.16); }
+    100% {
+        transform: translateX(15px) translateY(20px) scale(0.2); } }
+@keyframes Bround {
+    0% {
+        transform: rotate(0deg); }
+    20% {
+        transform: rotate(72deg); }
+    40% {
+        transform: rotate(144deg); }
+    60% {
+        transform: rotate(216deg); }
+    80% {
+        transform: rotate(288deg); }
+    100% {
+        transform: rotate(360deg); } }
+body {
+    background: #333; }
+
+#music-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    top: 1%;
+    right: 1%; }
+#music-container #main {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: url(../images/music_off.png) no-repeat 0 0;
+    background-size: cover; }
+#music-container .little1 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+#music-container .little2 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+#music-container .little3 {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    z-index: 10; }
+#music-container div span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/musict.png) no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0; }

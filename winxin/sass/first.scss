@@ -1,0 +1,398 @@
+/*样式重置*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, img { border:none; }
+
+img{display: block;}
+
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol,li { list-style:none; }
+a { color:#666; text-decoration:none; }
+.clearboth{clear:both;height:0;overflow:hidden;}
+/*页面字体响应*/
+html {
+  font-size: 62.5%; /* 10÷16=62.5% */
+}
+@media only screen and (min-width: 481px){
+  html {
+    font-size: 94%!important; /* 15.04÷16=94% */
+  }
+}
+@media only screen and (min-width: 561px){
+  html {
+    font-size: 109%!important; /* 17.44÷16=109% */
+  }
+}
+@media only screen and (min-width: 641px){
+  html {
+    font-size: 125%!important; /* 20÷16=125% */
+  }
+}
+@font-face {font-family: 'iconfont';
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+.up:before {
+  content: "\e605"; }
+.music:before {
+  content: "\e8bd"; }
+@keyframes Round {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-360deg);}
+}
+$vWidth:100%;
+$vHeight:100%;
+#graduate {
+  width:100vw;
+  height:100vh;
+  #container {
+    $slide_bg: #424732;
+    width:$vWidth;
+    height:$vHeight;
+    .swiper-container {
+      width:$vWidth;
+      height:90%;
+      position: relative;
+      .swiper-wrapper {
+        width:$vWidth;
+        height:$vHeight;
+        .swiper-slide{
+
+        }
+        .pic1 {
+          background:url(../images/pic1.jpg) no-repeat 0 0;
+          background-size: cover;
+          a {
+            position: relative;
+            display: block;
+            width:100%;
+            height:56%;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width:100%;
+              height: 100%;
+            }
+          }
+          p{
+            color:#fff;
+            font:400 2rem/3rem "Estrangelo Edessa";
+            text-align: right;
+          }
+
+        }
+        .pic2 {
+          background: $slide_bg;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .slide2 {
+            width:92%;
+            height:96%;
+            margin:0 auto;
+            padding-top:4%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .photo1{
+              height:44%;
+              width:100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              position: relative;
+              span:nth-child(1){
+                width:75%;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                a{
+                  width:100%;
+                  height:64%;
+                }
+                .down{
+                  width:100%;
+                  height:34%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  a{
+                    width:48%;
+                    height:100%;
+
+                  }
+                  .content{
+                    width:48%;
+                    height:100%;
+                    background:#fff;
+                  }
+                }
+              }
+              .title{
+                width:25%;
+                height:100%;
+                color:#fff;
+                font:400 4rem/3rem "Estrangelo Edessa";
+                text-align: center;
+              }
+            }
+            .photo2{
+              width:100%;
+              height:44%;
+            }
+            .photo3{
+              width:90%;
+              margin:0 auto;
+              height:10%;
+              color:#fff;
+              border-top:2px solid #fff;
+              font:600 2.2rem/3rem "Segoe UI Symbol";
+              text-align: center;
+            }
+          }
+        }
+        .pic3 {
+          background: $slide_bg;
+            a{
+              width:86%;
+              display: block;
+              height:28%;
+              padding:2%;
+              background:#fff;
+              margin:0 auto;
+              img {
+                width:100%;
+                height:100%;
+              }
+            }
+          a:nth-of-type(1){
+              transform: translateY(2rem) rotateZ(-13deg);
+          }
+          a:nth-of-type(2){
+            transform: rotateZ(10deg);
+          }
+          a:nth-of-type(3){
+            transform-origin: 50% 0;
+            transform: translateY(-1rem) rotateZ(-10deg);
+          }
+        }
+        .pic4 {
+          background: $slide_bg;
+          position: relative;
+          img:nth-of-type(1){
+            position: absolute;
+            width:25%;
+            height:42%;
+            bottom:4%;
+            left: 4%;
+          }
+          @for $i from 1 through 4 {
+            $a : $i - 1;
+            a:nth-of-type(#{$i}){
+              position: absolute;
+              top:0;
+              left:4%;
+              border:1px solid #31465b;
+              width:60%;
+              height:30%;
+              transform: translateX(1.5rem + $i) translateY(10rem*$a) rotateZ(10deg*$i+20);
+              transform-origin: 0+$i*17% 100 - $i*10%;
+              img {
+                width:100%;
+                height:100%;
+                position: absolute;
+                bottom:0;
+                left: 0;
+              }
+            }
+          }
+        }
+        .pic5 {
+            background: $slide_bg;
+            .title{
+              color:#fff;
+              font:400 3rem/5rem "Segoe UI Symbol";
+              text-align: center;
+            }
+            @for $a from 2 through 7{
+              $b:$a - 1;
+              @if $a == 2 {
+                p:nth-of-type(#{$a}){
+                  width:76%;
+                  a{
+                    width:48%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    em{
+                      width:46.5%;
+                      height:100%;
+                      img {
+                        width:100%;
+                        height:100%;
+                      }
+                    }
+                  }
+                }
+              } @else {
+                p:nth-of-type(#{$a}){
+                  width:113% - $b*12;
+                  $width:113% - $b*6;
+                  @if $a ==3{
+                    a{
+                      width:19.5%;
+                    }
+                  }@else{
+                    @if $a ==6{
+                      a{
+                        width:$width/2.3;
+                        display: block;
+                        margin:0 auto;
+                      }
+                    }@else{
+                      a{
+                        width:$width/(8 - $a);
+                      }
+                    }
+                }
+
+                }
+              }
+              p:nth-of-type(#{$a}){
+                margin:0 auto;
+                height:12%;
+                margin-bottom: 3%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                a{
+                  height:100%;
+                  img {
+                    width:100%;
+                    height:100%;
+                  }
+                }
+              }
+
+          }
+        }
+        .pic6 {
+          background:$slide_bg ;
+          a{
+            width:50%;
+            display: block;
+            margin:10% auto;
+            height:8%;
+            img {
+              width:100%;
+              height:100%;
+            }
+          }
+          p{
+            margin:10% auto;
+            width:80%;
+            text-align: center;
+            color:#c4c4c4;
+            font:400 2rem/2.4rem "Segoe UI Symbol";
+            font-family: 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+          }
+        }
+      }
+      .page {
+        position: absolute;
+        left:0;
+        bottom:0;
+        span{
+          background: #aaff7d;
+        }
+      }
+    }
+  }
+  #music_container{
+    width:30px;
+    height:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    top:1%;
+    right:1%;
+    #main{
+    margin:0 auto;
+    width:30px;
+    height:30px;
+    background: url(../images/music_off.png) no-repeat 0 0;
+    background-size: cover;
+
+  }
+    .little2{
+
+      position: absolute;
+      margin:0 auto;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      transform: scale(0);
+      z-index: 10;
+    }
+    .little3{
+      position: absolute;
+      margin:0 auto;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      transform: scale(0);
+      z-index: 10;
+    }
+    .little4{
+      position: absolute;
+      margin:0 auto;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      transform: scale(0);
+      z-index: 10;
+    }
+    div {
+      span{
+        display: block;
+        width:100%;
+        height:100%;
+        background: url(../images/musict.png) no-repeat 0 0;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  #up {
+    width:$vWidth;
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:5%;
+    z-index: 20;
+    font:400 2.2rem/2rem "Segoe UI Symbol";
+    text-align: center;
+    color:#fff;
+    animation: fadeOutUp 2s linear 1s infinite;
+  }
+}

@@ -1,0 +1,89 @@
+body .inner-slide1 .slide-content1 .tree-title {
+  position: absolute;
+  width: 80%;
+  height: 48%;
+  left: 10%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  body .inner-slide1 .slide-content1 .tree-title p {
+    width: 90%;
+    height: 48%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font: 300 3.4rem/4.8rem "DFKai-SB"; }
+body .inner-slide2 .slide-content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fbfbff;
+  text-align: center; }
+  body .inner-slide2 .slide-content2 h2 {
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    font: 300 3.4rem/4.8rem "DFKai-SB";
+    margin: 0 auto; }
+  body .inner-slide2 .slide-content2 p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 60%;
+    text-align: left;
+    margin: 0 auto;
+    font: 300 2.1rem/2.8rem "DFKai-SB"; }
+    body .inner-slide2 .slide-content2 p span {
+      height: 16%; }
+body .inner-slide3 .slide-content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  font: 100 2.4rem/4rem "DFKai-SB"; }
+  body .inner-slide3 .slide-content3 h2 {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: normal; }
+  body .inner-slide3 .slide-content3 p {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+body .inner-content4 .slide-content4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  font: 100 2rem/4rem "DFKai-SB"; }
+  body .inner-content4 .slide-content4 h2 {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: normal; }
+  body .inner-content4 .slide-content4 p {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+body .inner-slide5 .slide-content5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #fff;
+  font: 100 2rem/4rem "DFKai-SB"; }
+  body .inner-slide5 .slide-content5 p {
+    width: 90%;
+    margin: 0 auto; }
+  body .inner-slide5 .slide-content5 .myid {
+    color: #fff; }
+  body .inner-slide5 .slide-content5 .good {
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */

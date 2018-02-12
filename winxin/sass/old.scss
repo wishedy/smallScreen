@@ -1,0 +1,209 @@
+/*样式重置*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, img { border:none; }
+
+img{display: block;}
+
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol,li { list-style:none; }
+a { color:#666; text-decoration:none; }
+.clearboth{clear:both;height:0;overflow:hidden;}
+/*页面字体响应*/
+html {
+  font-size: 62.5%; /* 10÷16=62.5% */
+}
+@media only screen and (min-width: 481px){
+  html {
+    font-size: 94%!important; /* 15.04÷16=94% */
+  }
+}
+@media only screen and (min-width: 561px){
+  html {
+    font-size: 109%!important; /* 17.44÷16=109% */
+  }
+}
+@media only screen and (min-width: 641px){
+  html {
+    font-size: 125%!important; /* 20÷16=125% */
+  }
+}
+@font-face {font-family: 'iconfont';
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+.up:before {
+  content: "\e605"; }
+body{
+  width:100vw;
+  height:100vh;
+  section{
+    width:100%;
+    height:100%;
+    .swiper-wrapper{
+      width:100%;
+      height:100%;
+      .swiper-slide{
+        width:100%;
+        height:100%;
+        position: relative;
+        overflow: hidden;
+        .bg{
+          position: absolute;
+          top: 0;
+          left:0;
+          width:100%;
+          height:100%;
+
+        }
+        .title{
+          width:20%;
+          height:50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          position: absolute;
+          top:20%;
+          right:5%;
+          font:600 3.5rem/4.5rem "PMingLiU";
+          color: #f3e9da;
+          z-index: 2;
+          transform: translateX(150%);
+        }
+        .sitalone{
+          width:80%;
+          height:30%;
+          position: absolute;
+          z-index: 3;
+          top:10%;
+          left:10%;
+          transform: scale(0.6);
+        }
+        .gohome{
+          width:80%;
+          height:30%;
+          position: absolute;
+          z-index: 3;
+          top:50%;
+          left:10%;
+          font:600 2rem/3rem "PMingLiU";
+          color: #f3e9da;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          p{
+            transform: translateX(-120%);
+
+          }
+        }
+        .oldphone{
+          width:60%;
+          height:40%;
+          position: absolute;
+          z-index: 3;
+          top:10%;
+          left:10%;
+          transform: translateX(-120%);
+        }
+        .think{
+          width:80%;
+          height:30%;
+          position: absolute;
+          z-index: 3;
+          top:50%;
+          left:10%;
+          font:600 1.6rem/2rem "PMingLiU";
+          color: #f3e9da;
+          transform: translateX(-120%);
+        }
+        .sad{
+          width:80%;
+          height:30%;
+          position: absolute;
+          z-index: 3;
+          top:70%;
+          left:10%;
+          font:600 1.7rem/2rem "PMingLiU";
+          color: #f3e9da;
+          transform: translateX(120%);
+        }
+        .hand{
+          width:60%;
+          height:40%;
+          position: absolute;
+          z-index: 3;
+          top:10%;
+          left:10%;
+        }
+        .sign{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width:10%;
+          height:12%;
+          position: absolute;
+          z-index: 3;
+          top:30%;
+          right:10%;
+          transform: translateY(-50%);
+          font:600 3rem/4rem "PMingLiU";
+          color: #f3e9da;
+        }
+        .handin{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width:100%;
+          height:12%;
+          position: absolute;
+          z-index: 3;
+          top:56%;
+          left:0;
+          transform: translateX(-140%);
+          font:300 1.6rem/3.4rem "PMingLiU";
+          color: #f3e9da;
+        }
+        .end{
+          width:80%;
+          height:12%;
+          position: absolute;
+          z-index: 3;
+          top:56%;
+          left:10%;
+          text-indent: 2em;
+          transform: translateY(400%);
+          font:300 1.6rem/3.4rem "PMingLiU";
+          color: #f3e9da;
+        }
+      }
+    }
+    .swiper-pagination{
+      span{
+        background: #fff;
+        width:6px;
+        height:6px;
+      }
+    }
+    .upchange{
+      color:#fff;
+      position: absolute;
+      left: 0;
+      text-align: center;
+      z-index: 33;
+      bottom: 3%;
+      width:100%;
+      height:1rem;
+      animation: fadeOutUp 1.5s linear 0s infinite;
+      font: 800 2rem/2rem "iconfont";
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@keyframes Round {
+  $a : 100%/5;
+  @for $i from 0 through 5{
+    $b:$a*$i;
+    #{$b}{
+      transform:translateX(-$i*3px) translateY(-$i*6px) scale($i*0.1);
+    }
+  }
+}
+@keyframes Cound {
+  $a : 100%/5;
+  @for $i from 0 through 5{
+    $b:$a*$i;
+    #{$b}{
+      transform:translateX(-$i*3px) translateY($i*2px) scale($i*0.08);
+    }
+  }
+}
+@keyframes Dound {
+  $a : 100%/5;
+  @for $i from 0 through 5{
+    $b:$a*$i;
+    #{$b}{
+      transform:translateX($i*3px) translateY(-$i*3px) scale($i*0.09);
+    }
+  }
+}
+@keyframes Eound {
+  $a : 100%/5;
+  @for $i from 0 through 5{
+    $b:$a*$i;
+
+    #{$b}{
+      transform:translateX($i*3px) translateY($i*4px) scale($i*0.04);
+    }
+  }
+}
+@keyframes Bround {
+  $a : 100%/5;
+  @for $i from 0 through 5{
+    $b:$a*$i;
+    #{$b}{
+      transform:rotate($i*72deg);
+    }
+  }
+}
+body{
+  background:#333;
+}
+.music-container{
+  width:30px;
+  height:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  top:1%;
+  right:1%;
+  #main{
+    margin:0 auto;
+    width:30px;
+    height:30px;
+    background: url(../images/music_off.png) no-repeat 0 0;
+    background-size: cover;
+
+  }
+  .little1{
+
+    position: absolute;
+    margin:0 auto;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform: scale(0);
+    z-index: 10;
+  }
+  .little2{
+    position: absolute;
+    margin:0 auto;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform: scale(0);
+    z-index: 10;
+  }
+  .little3{
+    position: absolute;
+    margin:0 auto;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform: scale(0);
+    z-index: 10;
+  }
+  div {
+    span{
+      display: block;
+      width:100%;
+      height:100%;
+      background: url(../images/musict.png) no-repeat 0 0;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

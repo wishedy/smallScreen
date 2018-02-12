@@ -1,0 +1,118 @@
+body{
+  .inner-slide1{
+    .slide-content1{
+      .tree-title{
+        position: absolute;
+        width:80%;
+        height:48%;
+        left:10%;
+        top:15%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        p{
+          width:90%;
+          height:48%;
+          margin:0 auto;
+          color: #fff;
+          text-align: center;
+          font: 300 3.4rem/4.8rem "DFKai-SB";
+        }
+      }
+    }
+  }
+  .inner-slide2{
+    .slide-content2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fbfbff;
+      text-align: center;
+
+      h2{
+        width:80%;
+        height:10%;
+        text-align: center;
+        font: 300 3.4rem/4.8rem "DFKai-SB";
+        margin:0 auto;
+      }
+      p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:80%;
+        height:60%;
+        text-align: left;
+        margin:0 auto;
+        font: 300 2.1rem/2.8rem "DFKai-SB";
+        span{
+          height:16%;
+        }
+      }
+    }
+  }
+  .inner-slide3{
+    .slide-content3{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      color:#fff;
+      font: 100 2.4rem/4rem "DFKai-SB";
+      h2{
+        width:80%;
+        margin:0 auto;
+        font-weight: normal;
+      }
+      p{
+        width:80%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+  .inner-content4{
+    .slide-content4{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      color:#fff;
+      font: 100 2rem/4rem "DFKai-SB";
+      h2{
+        width:80%;
+        margin:0 auto;
+        font-weight: normal;
+      }
+      p{
+        width:80%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+  .inner-slide5{
+    .slide-content5{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      color:#fff;
+      font: 100 2rem/4rem "DFKai-SB";
+      p{
+          width:90%;
+        margin:0 auto;
+      }
+      .myid{
+        color:#fff;
+      }
+      .good{
+        color:#fff;
+      }
+    }
+  }
+}

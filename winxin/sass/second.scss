@@ -1,0 +1,173 @@
+/*样式重置*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, img { border:none; }
+
+img{display: block;}
+
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol,li { list-style:none; }
+a { color:#666; text-decoration:none; }
+.clearboth{clear:both;height:0;overflow:hidden;}
+/*页面字体响应*/
+html {
+  font-size: 62.5%; /* 10÷16=62.5% */
+}
+@media only screen and (min-width: 481px){
+  html {
+    font-size: 94%!important; /* 15.04÷16=94% */
+  }
+}
+@media only screen and (min-width: 561px){
+  html {
+    font-size: 109%!important; /* 17.44÷16=109% */
+  }
+}
+@media only screen and (min-width: 641px){
+  html {
+    font-size: 125%!important; /* 20÷16=125% */
+  }
+}
+@font-face {font-family: 'iconfont';
+  src: url('../secondfont/iconfont.eot'); /* IE9*/
+  src: url('../secondfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../secondfont/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../secondfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../secondfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+@keyframes Round {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-360deg);}
+}
+@keyframes music {
+    /*$n: 5;
+    $x: 17.5%;
+    $y: (100% - $n * $x) / ($n - 1);*/
+  $speed : 5%;
+    @for $i from 0 through 20{
+      $now:$i*$speed;
+      #{$now}{
+        transform: translateX(-$i*2rem) translateY($i*2rem);
+        font-size:0.1rem*$i;
+        opacity:100-$i*5;
+      }
+  }
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;}
+.music-copy:before{
+  content:"\e601";
+}
+.music:before{
+  content:"\e8bd";
+}
+.up:before{
+  content:"\e605";
+}
+section{
+  width:100vw;
+  height:100vh;
+  position: relative;
+  .swiper-container {
+    width:100%;
+    height:100%;
+    .swiper-wrapper{
+      width:100%;
+      height:100%;
+      .swiper-slide{
+        width:100%;
+        height:100%;
+        position: relative;
+        div{
+          width:80%;
+          margin:0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute;
+          h2 {
+            font:900 3.4rem/4.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+            color:#fff;
+          }
+          p{
+            font:600 2rem/2.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+            color:#fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
+        .bottom {
+            left:20%;
+            bottom:5%;
+        }
+        .top {
+            left:20%;
+            top:5%;
+        }
+
+      }
+      .pic1 {
+          background:url(../images/happy1.jpg) no-repeat 0 0;
+          background-size: cover;
+      }
+      .pic2 {
+        background:url(../images/happy2.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic3 {
+        background:url(../images/happy3.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic4 {
+        background:url(../images/happy4.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic5 {
+        background:url(../images/happy5.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic6 {
+        background:url(../images/happy6.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic7 {
+        background:url(../images/happy7.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+      .pic8 {
+        background:url(../images/happy8.jpg) no-repeat 0 0;
+        background-size: cover;
+      }
+    }
+  }
+  .up {
+    position: absolute;
+    width:100%;
+    height:3%;
+    left:0;
+    bottom:2%;
+    z-index: 10;
+    color:#fff;
+    font:600 2rem/1.4rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    text-align: center;
+    animation: fadeOutUp 1.2s linear 1s infinite;
+  }
+  .music {
+    position: absolute;
+    right:5%;
+    top:4%;
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    background:#484848;
+    font:100 4rem/3rem 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+    color:#fff;
+    z-index: 10;
+
+  }
+}
